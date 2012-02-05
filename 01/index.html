@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!--
+   index.html - My boilerplate HTML 5 index page
+
+   Copyright (c) 2012 Robin Norwood <robin.norwood@gmail.com>
+
+      This file is part of Google Maps API Demo #1.
+
+    Google Maps API Demo #1 is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    Google Maps API Demo #1 is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with Google Maps API Demo #1.  If not, see <http://www.gnu.org/licenses/>.
+-->
+  <head>
+    <title>Google Maps API Demo #1</title>
+    <meta name="description" content="Google Maps API Demo #1"/>
+    <meta name="author" content="Robin Norwood"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+    <link href="css/resets.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+
+    <!-- FIXME - needs to be a paid "production" key for production
+    deployment -->
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBrH5JH3Bjrx6j5joQrr6keKAS-MUcX9W4&sensor=true">
+    </script>
+
+    <script type="text/javascript" src="js/mapdemo.js"></script>
+
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body onload="initialize()">
+      <div id="map_canvas"></div>
+      <div id="controls">
+	<div id="main_controls">
+	  <strong>
+	    Click on the map to set a (
+	  </strong>
+	  latitude, longitude
+	  <strong>
+	    ) marker. Marker values will appear below.
+	  </strong>
+	</div>
+	<div id="info">
+	  <ul id="point_list">
+	    
+	  </ul>
+	</div>
+      </div>
+  </body>
+
+</html>
